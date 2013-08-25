@@ -1,4 +1,5 @@
 var count = 4;
+
 function foo() {
     var table = [count];
 
@@ -14,4 +15,5 @@ function foo() {
     return table;
 }
 
-foo(); // Qual o retorno?
+console.log(foo()); // Qual o retorno?
+console.log(count); // Qual o retorno?

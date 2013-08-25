@@ -13,3 +13,14 @@ console.log(cubo(3)); // 27
 console.log(cubo(4)); // 64
 
 // implementar a função potência usando closure.
+function potencia(expoente) {
+	return function(numero) {
+		var contador = expoente;
+		var resultado = 1;
+		while(contador > 0) {
+			resultado *= numero;
+			contador -= 1;
+		}
+		return resultado;
+	};
+}
